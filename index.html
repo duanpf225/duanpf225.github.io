@@ -5,6 +5,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
+<script src="js/lunbo.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -13,6 +14,45 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--图片轮播
+<style>
+
+* { padding: 0; margin: 0; list-style: none; }
+/********************************************/
+
+.banner { width: 1920px; height: 500px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; }
+
+.banner .img {position: absolute; left: 0px; top: 0; } /*图片样式*/
+
+.banner .img li { float: left; } /*图片样式*/
+
+.banner .img img { width: 550px; }
+
+/*/ 小圆圈 /*/
+
+.banner .num { position: absolute; width: 100%; bottom: 50px; left: 0; text-align: center; font-size: 0px;; }/*bottom 可以调整小圈圈高度 */
+
+.banner .num li { width: 10px; height: 10px; background: #888; border-radius: 50%; display: inline-block; margin: 0 3px; cursor: pointer; }
+
+.banner .num li.on { background: #F60; }
+
+/*/ 按钮 /*/
+
+.banner .btn { width: 30px; height: 50px; background: rgba(0,0,0,0.5); position: absolute; top: 50%; margin-top: -25px; cursor: pointer; text-align: center; line-height: 50px; color: #fff; font-size: 40px; font-family: "宋体"; display: none; }
+
+.banner:hover .btn { display: block; }
+
+.banner .btn_l { left: 0; }
+
+.banner .btn_r { right: 0; }
+
+/* 修改输出屏大小 */
+
+#ban1 .banner { width: 100%px; height:600px; margin: 0 auto; border: 0px solid #000; }
+
+#ban1 .banner .img img { width: 1920px; height: 600px; /* 修改图片大小 */
+
+</style>-->
 </head>
 <body>
 <!--header-->
@@ -28,8 +68,9 @@
 			<span class="menu"><img src="images/menu.png" alt=""> </span>
 				<ul>
 					<li class="active"><a href="index.html">主页</a></li>
+					<li><a href="ktzjj.html" class="hvr-sweep-to-bottom">课题组简介</a></li>
 					<li><a href="yjly.html" class="hvr-sweep-to-bottom">研究领域</a></li>
-					<li><a href="blog.html" class="hvr-sweep-to-bottom">组内动态</a></li>
+					<!--<li><a href="blog.html" class="hvr-sweep-to-bottom">组内动态</a></li>-->
 					<li><a href="yjcg.html" class="hvr-sweep-to-bottom">研究成果 </a></li>
 					<li><a href="zncy.html" class="hvr-sweep-to-bottom">组内成员 </a></li>
 					<li><a href="mail.html" class="hvr-sweep-to-bottom">招生招聘 </a></li>
@@ -45,8 +86,34 @@
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-<!---->
+
 </div>
+<!--<br></br>
+<script src="js/jquery.min.js"></script>
+
+<script src="js/lunbo.js"></script>
+
+<div id="ban1">
+
+<div class="banner">
+
+<ul class="img">
+<li><a href="#"><img class="img-responsive" src="images/blog/1.jpg"></a></li>
+<li><a href="#"><img class="img-responsive" src="images/blog/2.jpg"></a></li> 
+</ul>
+
+<ul class="num">--> <!--小圆圈-->
+<!--
+</ul>
+
+<div class="btn btn_l">&lt;</div> 
+
+<div class="btn btn_r">&gt;</div> 
+
+</div>
+
+</div>
+-->
 <div class="content">
 	<div class="container">
 		<!--content-top-->
@@ -101,38 +168,77 @@
 			<div class="clearfix"> </div>
 		</div>
 		-->
+
 		<!--//content-mid-->
 		<!--content-left-->
 		
 		<div class="content-left">
 		<h1><font face="Cinzel-Bold">News：</font></h1>
+		<br></br>
 		
+		<!--第一列-->
 			<div class="col-md-4 content-left-top">
-				<a href="1.html"><img class="img-responsive" src="images/md1.jpg" alt=""></a>
+			
+				<a href="blog/1.html"><img class="img-responsive" src="images/blog/1.1.jpg" alt=""></a>
 				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="single.html">Lorem Ipsum is not simply</a></h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>				
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/1.html">Click to read</a></h4>
+					<p>2021-03-23，The Journal of Physical Chemical Letters：利用低能级三重态敏化剂实现光子上转换开关</p>				
 				</div>
+				
+				<br></br>
+				
+				<a href="blog/2.html"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
+				<div class=" content-left-bottom">
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/2.html">Click to read</a></h4>
+					<p>2021-02-09，ACS Nano：通过完全非手性组分获得并调控纳米螺旋结构和上转换圆偏振发光</p>				
+				</div>
+				
 			</div>
+			<!--第二列-->
 			<div class="col-md-4 content-left-top">
-				<a href="single.html"><img class="img-responsive" src="images/md3.jpg" alt=""></a>
+			
+				<a href="blog/3.html"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
 				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="single.html">Lorem Ipsum is not simply</a></h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>				
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/3.html">Click to read</a></h4>
+					<p>2020-11-25，Angewandte Chemie Internatinal Edition：手性多环芳烃-全氟芳烃相互作用提升圆偏振发光材料的整体性能</p>				
 				</div>
-			</div>
+				
+				<br></br>
+				
+				<a href="blog/4.html"><img class="img-responsive" src="images/blog/4.1.jpg" alt=""></a>
+				<div class=" content-left-bottom">
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/4.html">Click to read</a></h4>
+					<p>2020-11-07，Nature Communications:手性液晶体系中上转换圆偏振紫外发光的手性光聚合应用</p>				
+				</div>
+				</div>
+			
+			
 			<div class="col-md-4 content-left-top">
-				<a href="single.html"><img class="img-responsive" src="images/md2.jpg" alt=""></a>
+			<!--第三列-->
+				<a href="blog/5.html"><img class="img-responsive" src="images/blog/5.1.jpg" alt=""></a>
 				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="single.html">Lorem Ipsum is not simply</a></h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>				
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/5.html">Click to read</a></h4>
+					<p>2020-11-07，付阔等同学在Nanoscale报道了银纳米线等离子体来增强圆偏振发光的现象</p>				
 				</div>
+				
+				<br></br>
+				
+				<a href="blog/6.html"><img class="img-responsive" src="images/blog/6.jpg" alt=""></a>
+				<div class=" content-left-bottom">
+					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/6.html">Click to read</a></h4>
+					<p>2020-07-10, Acc. Chem. Res.: 多种光物理过程调制复杂体系圆偏振发光性质的新展望</p>				
+				</div>
+				
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 		
+</div>
+		
+
+		</div>
 		<!--//content-left-->
-	</div>
+
 	<!--content-right-->
 		<!--
 	<div class="content-right">
@@ -187,34 +293,47 @@
 	-->
 	<!--//content-bottom-->
 	<!--address-->
-	
+
 	<div class="address">
 		<div class="container">
 			<div class=" address-more">
-				<h3>Address</h3>
+	
+<div class="contents">
+<center>
+<font color="white">
+  <div class="foot" style="padding-top:13px;">Copyright 2003-2005 国家纳米科学中心 版权所有 备案序号：京ICP备05064431 京公网安备：110402500013<br />
+地址：北京市海淀区中关村北一条11号 　邮编：100190 <br />
+电话：010-62652116　传真：010-62656765<br />
+Email：webmaster@nanoctr.cn
+</font>
+</div>
+</center>
+</div>
+	
+				<!--<h3>Address</h3>
 				<div class="col-md-4 address-grid">
 					<i class="glyphicon glyphicon-map-marker"></i>
 					<div class="address1">
-						<p>Lorem ipsum dolor</p>
-						<p>TL 19034-88974</p>
+						<p>北京市海淀区中关村北一条11号</p>
+						<p>电话：010-62652116</p>
 					</div>
 						<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-4 address-grid ">
 					<i class="glyphicon glyphicon-phone"></i>
 						<div class="address1">
-							<p>+885699655</p>
+							<p>传真：010-62656765</p>
 						</div>
 					<div class="clearfix"> </div>
 				</div>
 				<div class="col-md-4 address-grid ">
 					<i class="glyphicon glyphicon-envelope"></i>
 						<div class="address1">
-							<p><a href="mailto:@example.com"> @example.com</a></p>
+							<p><a href="webmaster@nanoctr.cn"> Email：webmaster@nanoctr.cn</a></p>
 						</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="clearfix"> </div>
+				<div class="clearfix"> </div>-->
 			</div>
 		</div>
 	</div>

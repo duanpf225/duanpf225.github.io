@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 /*--header--*/
 .header {
-	background:url(../images/1.jpg) no-repeat;
+	background:url(../images/2.jpg) no-repeat;
 	width:100%;
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -1725,4 +1725,4 @@ h3.typo1 {
 .page-header h3 {
   font-size: 1.8em;
 } 
-}
+
