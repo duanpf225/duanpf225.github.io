@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Introduction</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<title>Introduction</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
+
 <body>
 <!--header-->
 <div class="header header-top">
 	<div class="container">
 		<div class="logo">
-		<h1><a href="index.html">
-			DUAN's Group
-		</a></h1>
+		    <a href="index.html">
+			    <img src="images/logo2.png" alt width="240" height="80">
+		    </a>
 		</div>
 		<div class="top-nav">
 			<span class="menu"><img src="images/menu.png" alt=""> </span>
 				<ul>
-					<li><a href="index.html" class="hvr-sweep-to-bottom">主页<br/>Home</a></li>
-					<li class="active"><a href="ktzjj.html">课题组简介<br/>Introduction</a></li>
-					<li><a href="yjly.html" class="hvr-sweep-to-bottom">研究领域<br/>Research</a></li>
+					<li><a href="index.html" class="hvr-sweep-to-bottom">Home</a></li>
+					<li class="active"><a href="ktzjj.html">About</a></li>
+					<!--<li><a href="yjly.html" class="hvr-sweep-to-bottom">Research</a></li>-->
 					<!--<li><a href="blog.html" class="hvr-sweep-to-bottom">组内动态</a></li>-->
-					<li><a href="yjcg.html" class="hvr-sweep-to-bottom">研究成果<br/>Publication</a></li>
-					<li><a href="zncy.html" class="hvr-sweep-to-bottom">组内成员<br/>Members</a></li>
-					<li><a href="mail.html" class="hvr-sweep-to-bottom">招生招聘<br/>Contact Us</a></li>
+					<li><a href="yjcg.html" class="hvr-sweep-to-bottom">Publication</a></li>
+					<li><a href="zncy.html" class="hvr-sweep-to-bottom">Members</a></li>
+					<!--<li><a href="mail.html" class="hvr-sweep-to-bottom">Contact</a></li>-->
 				<div class="clearfix"> </div>
 				</ul>
 						<!--script-->
@@ -45,87 +46,288 @@
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-<!---->
 </div>
+
+
 <!--blog-->
+<div class="container-introduction">
+	<div class="about">
+		<div class="container">
+			<div class="about-title">
+				<h1>"We explore the secrets of chirality"</h1>
+				<img class="skills" src="images/skill.png" alt height="190px" width="1200px">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Body-->
+<div class="container">
+	<!--左侧-->
+	<div class="container-left">		
+		<h1>About us：</h1>
+		<br></br>
+		<p>Our research group is a vibrant experimental chemistry research group. Our researches focus on optics, photochemistry and physical processes in hierarchical molecular, supramolecular, and nano or micron systems. </p>
+		<p></p>
+		<p>It involves the transfer of chiral information, the transfer and conversion of excited state energy, and the synergy between chirality and energy in the hierarchical assembled system.</p>
+		<p></p>
+		<p>Research directions include the development and application of photon upconversion materials, chiral optoelectronic materials and devices, photochemical and photophysical research of nanomaterials, and chiral science of soft matter systems.</p>
+	</div>
+
+	<!--右侧-->
+	<style>
+		.container-right .caption {
+			position: absolute;
+			bottom: -23px;
+			left: 0;
+			right: 0;
+			padding: 10px;
+			background: linear-gradient(transparent, rgba(0,0,0,1.7));
+			color: #fff;
+			font-size: 16px;
+		}
+		.container-right .carousel {
+			width: 100%;
+			max-width: 800px;
+			height: 500px;   
+			margin: 8em auto; 
+			position: relative;   
+			overflow: hidden;
+			border-radius: 5px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		}
+		.container-right .slides {
+			display: flex;    
+			transition: transform 0.6s ease-in-out;
+		}
+		.container-right .slide-link {
+			display: block;
+			min-width: 100%;
+			height: 457px;
+			position: relative;
+		}
+		.container-right .controls {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 5px;
+		}
+		.container-right .dots {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 8px;
+		}
+		.container-right .dot {
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: rgba(255,255,255,0.5);
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+		.container-right .dot.active {
+			background: white;
+			transform: scale(1.2);
+		}
+	</style>
+
+	<div class="container-right">
+		<div class="carousel col-xs-12 col-sm-12 slide col-md-7" onmouseover="pauseAutoPlay()" onmouseout="resumeAutoPlay()">
+			<div class="slides">
+				<a href="https://nanoctr.cas.cn/sourcedb/zw/zxrck/201511/t20151127_4479097.html" class="slide-link" target="_blank">
+					<img src="images/ktzjj/About1.jpg" alt="duanpf1">
+					<div class="caption">Pengfei Duan, Professor, and PhD Advisor at the National Center for Nanoscience and Technology.</div>
+				</a>
+				<a href="https://nanoctr.cas.cn/sourcedb/zw/zxrck/201511/t20151127_4479097.html" class="slide-link" target="_blank">
+					<img src="images/ktzjj/About2.jpg" alt="duanpf2">
+					<div class="caption">Pengfei Duan, Professor, and PhD Advisor at the National Center for Nanoscience and Technology.</div>
+				</a>
+				<a href="https://nanoctr.cas.cn/sourcedb/zw/zxrck/201511/t20151127_4479097.html" class="slide-link" target="_blank">
+					<img src="images/ktzjj/About3.jpg" alt="duanpf3">
+					<div class="caption">Pengfei Duan, Professor, and PhD Advisor at the National Center for Nanoscience and Technology.</div>
+				</a>
+			</div>
+			<div class="controls">
+				<button onclick="prevSlide()">❮</button>
+				<button onclick="nextSlide()">❯</button>
+			</div>
+			<div class="dots"></div>
+		</div>
+	</div>
+
+		<script>
+			let currentSlide = 0;
+			let autoPlayTimer;
+			const slides = document.querySelector('.slides');
+			const dotsContainer = document.querySelector('.dots');
+			const slideCount = document.querySelectorAll('.slide-link').length;
+			// 初始化指示器
+			function initDots() {
+			  for (let i = 0; i < slideCount; i++) {
+				const dot = document.createElement('div');
+				dot.className = `dot ${i === 0 ? 'active' : ''}`;
+				dot.addEventListener('click', () => goToSlide(i));
+				dotsContainer.appendChild(dot);
+			  }
+			}
+			// 切换幻灯片
+			function goToSlide(index) {
+			  currentSlide = (index + slideCount) % slideCount;
+			  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+			  updateDots();
+			}
+			function nextSlide() {
+			  goToSlide(currentSlide + 1);
+			}
+			function prevSlide() {
+			  goToSlide(currentSlide - 1);
+			}
+			// 更新指示器状态
+			function updateDots() {
+			  document.querySelectorAll('.dot').forEach((dot, index) => {
+				dot.classList.toggle('active', index === currentSlide);
+			  });
+			}
+			// 自动播放控制
+			function startAutoPlay() {
+			  autoPlayTimer = setInterval(nextSlide, 5000);
+			}
+			function pauseAutoPlay() {
+			  clearInterval(autoPlayTimer);
+			}
+			function resumeAutoPlay() {
+			  startAutoPlay();
+			}
+			// 初始化
+			initDots();
+			startAutoPlay();
+			// 窗口失焦时暂停自动播放
+			window.addEventListener('blur', pauseAutoPlay);
+			window.addEventListener('focus', resumeAutoPlay);
+		</script>
+	</div>
+</div>
+
+<!--banner-->
+<style>
+.banner1 .container h1 {
+	position: absolute;
+	text-align: center;
+	font-size: 4.3em;
+	color: #ffffffd9;
+	font-weight: 700;
+	text-transform: uppercase;
+	transform: translate(50%, 50%);
+	right: 50%;
+	bottom: 30%;
+}
+.single-grid {
+	text-align: center;
+	padding: 2em 0;
+}
+.single-grid .service-grids {
+	padding: 2em 0;
+}
+.single-grid .service-grid a span {
+
+    width: 50px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px solid #fa5c3cd5;
+}
+.single-grid .service-grid h5 {
+    color: #000;
+    font-size: 1.8em;
+    margin: 1.8em 50px;
+    font-weight: 600;
+    font-style: normal;
+}
+.single-grid .service-grid p {
+    color: #818181;
+    font-size: 1.2em;
+	margin: 0 50px;
+}
+.single-grid .service-grid a span.low {
+    background-position: -46px -47px;
+}
+.single-grid .service-grid a span.word-press {
+    background-position: -100px -47px;
+}
+.single-grid .service-grid a span.seo {
+    background-position: -154px -49px;
+}
+.single-grid .service-grid a span.hosting {
+    background-position: -206px -47px;
+}
+.single-grid .service-grid a span.advertising {
+    background-position: -256px -47px;
+}
+.single-grid img {
+	width: 100%;
+    height: auto;
+    display: block;
+}
+
+</style>
+
+<div class="banner1" id="Research">
 	<div class="container">
-	<div class="content-left", style="font-size: 17pt; text-indent:2em;margin-bottom: 7.5pt;line-height: 30pt; text-indent: 56pt">
-	
-	<center><img class="img-responsive" src="images/ktzjj/1.png" alt="" /></center>
-	<br></br>
-	
-<p>导师简介：段鹏飞，2011年在中国科学院化学研究所获得博士学位，师从刘鸣华研究员。2011年11月至2013年11月受日本学术振兴会（JSPS）资助在日本九州大学从事博士后研究工作，合作教授Nobuo Kimizuka；2013年12月至2015年10月受聘于日本九州大学“Center for Molecular System”，担任助教。 2015年11月进入国家纳米科学中心中科院纳米系统与多级次制造重点实验室工作。研究领域为分子/纳米光化学与物理。</p>
-<br></br>
-<p>Pengfei Duan received his Ph.D. from the Institute of Chemistry, Chinese Academy of Sciences in 2011, with Professor Minghua Liu. From November 2011 to November 2013, he worked as JSPS post-doctoral research fellow at Kyushu University in the laboratory of Professor Nobuo Kimizuka. From December 2013 to October 2015, he was employed by the Center for Molecular System at Kyushu University, served as a teaching assistant. In November 2015, he joined the National Center for Nanoscience and Technology, Key Laboratory of Nanosystem and Hierarchical Fabrication, CAS. His research field is molecular/nano photochemistry and physics.</p>
-<br></br>
-<h1><font face="Cinzel-Bold">About us：</font></h1>
-<br></br>
-<p>我们课题组是一个充满朝气的实验化学研究小组。研究聚焦于多级次的分子、超分子以及纳微米体系中的光学及光化学与物理过程的研究。涉及到多级次组装体系中手性信息的转移传递、激发态能量的转移转换以及手性与能量的协同作用。研究方向包括光子频率上转换材料的开发及其应用拓展、手性光电材料与器件、纳米材料的光化学与光物理研究 以及软物质体系手性科学问题。 </p>
-
-<br></br>
-<p>Our research group is a vibrant experimental chemistry research group. Our researches focus on optics, photochemistry and physical processes in hierarchical molecular, supramolecular, and nano or micron systems. It involves the transfer of chiral information, the transfer and conversion of excited state energy, and the synergy between chirality and energy in the hierarchical assembled system. Research directions include the development and application of photon upconversion materials, chiral optoelectronic materials and devices, photochemical and photophysical research of nanomaterials, and chiral science of soft matter systems.</p>
-
-
-
-					<center>
-					<div class="single-grid">
-					<img class="img-responsive" src="images/ktzjj/1.jpg" alt="" />
-					<img class="img-responsive" src="images/ktzjj/2.jpg" alt="" />
-					<div class="lone-line">
-					<h2> </h2>					
-					</center>				
-					
-<div class="content-left", style="text-indent:0em;margin-bottom: 7.5pt;line-height: 30pt;">
-
-
-<h1><font face="Cinzel-Bold">课题组荣誉及获奖：</font></h1>
-<p></p>
-<ol reversed>
-<h3>段鹏飞：</h3>	
-<li>2024年，国家纳米科学中心2023年度工作突出贡献奖；</li>	
-<li>2022年中国化学会超分子化学青年创新学术讲座奖；</li>	
-<li>2022年亚太光化学协会青年科学家奖（The Asian and Oceanian Photochemistry Association (APA) Prize for Young Scientist）；</li>	
-<li>2022年北京市基金委杰出青年；</li>	
-<li>2019年中国化学会全国胶体与界面化学“青年学者奖”；</li>
-<li>2018年中国分析测试协会科学技术奖“一等奖”</li>
-</ol>
-<br></br>
-
-<p></p>
-<ol reversed>
-<h3>学生获奖：</h3>
-<li>2024年第十一届全国手性分子学术研讨会“最佳口头报告奖”，季洪汉；</li>
-<li>2024年中国化学会第十七届全国应用化学年会“优秀墙报奖”，黄江；</li>
-<li>2023年硕士研究生国家奖学金，蒋承逾；</li>
-<li>2023年中国稀土学会学术年会“优秀墙报奖”，黄江；</li>
-<li>2023年中国化学会第十五届全国物理有机化学学术会议“优秀墙报奖”，任超；</li>
-<li>2022年海峡两岸暨港澳高分子液晶态与超分子有序结构学术研讨会“优秀墙报奖”，杨雪峰；</li>
-<li>2022年中国科学院大学“中科院院长奖”，杨雪峰；</li>
-<li>2021年中国科学院大学“朱李月华奖”，赵炵翰；</li>
-<li>2021年博士研究生国家奖学金， 杨雪峰；</li>
-<li>2020年博士研究生国家奖学金，赵炵翰； </li>
-<li>2019年中国博士后科学基金会面上项目，韩建雷；</li>
-<li>2018年博士研究生国家奖学金，杨东；</li>
-<li>2018年硕士研究生国家奖学金，霍胜伟；</li>
-<li>2018年中国博士后科学基金会“博新计划”，韩建雷</li>
-<li>2017年博士研究生国家奖学金，韩建雷；</li>
-</ol>
-
-
+		<a href="yjly.html" target="_blank">
+			<h1>"Research fields"</h1>
+		</a>
+	</div>
 </div>
 
+<div class="single-grid">
+	<div class="service-grids ">
+		<div class="col-md-4 service-grid">
+			<a><span> </span></a>
+			<h5>Chirality Science</h5>
+			<p>"Physical and chemical properties of chiral materials."</p>							
+		</div>
+		<div class="col-md-4 service-grid">
+			<a><span class="low"> </span></a>
+			<h5>Supramolecular Chemistry</h5>
+			<p>"Chirality of supramolecular assemblies."</p>							
+	    </div>
+		<div class="col-md-4 service-grid">
+			<a><span class="word-press"> </span></a>
+			<h5>Colloid and Interface Chemistry</h5>
+			<p>"Research on Chiral Photophysical Properties in Colloidal Systems."</p>							
+		</div>					
+		<div class="clearfix"> </div>
 	</div>
+	<div class="service-grids ">
+		<div class="col-md-4 service-grid">
+			<a><span class="seo"> </span></a>
+			<h5>Photochemistry and Photophysics</h5>
+			<p>"Chirality under controlled quantum spin."</p>							
+		</div>
+		<div class="col-md-4 service-grid">
+			<a><span class="hosting"> </span></a>
+			<h5>Nanochemistryn</h5>
+			<p>"Preparation and characterization of chiral nanomaterials."</p>							
+	    </div>
+		<div class="col-md-4 service-grid">
+			<a><span class="advertising"> </span></a>
+			<h5>Nanophotonics</h5>		
+			<p>"Chiral photophysical properties at the nanoscale."</p>							
+		</div>					
+		<div class="clearfix"> </div>
+	</div>		
+    <div class="container">
+		<img class="img-responsive" src="images/ktzjj/1.jpg" alt height="600px" width="800">
+	    <img class="img-responsive" src="images/ktzjj/2.jpg" alt="" />
 	</div>
-	
-
-	
-	</div>
-	
-
 	
 </div>
+
 </body>
-
-
-
 </html>

@@ -1,78 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/lunbo.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--图片轮播
-<style>
-
-* { padding: 0; margin: 0; list-style: none; }
-/********************************************/
-
-.banner { width: 1920px; height: 500px; overflow: hidden; position: relative; margin-left: auto; margin-right: auto; }
-
-.banner .img {position: absolute; left: 0px; top: 0; } /*图片样式*/
-
-.banner .img li { float: left; } /*图片样式*/
-
-.banner .img img { width: 550px; }
-
-/*/ 小圆圈 /*/
-
-.banner .num { position: absolute; width: 100%; bottom: 50px; left: 0; text-align: center; font-size: 0px;; }/*bottom 可以调整小圈圈高度 */
-
-.banner .num li { width: 10px; height: 10px; background: #888; border-radius: 50%; display: inline-block; margin: 0 3px; cursor: pointer; }
-
-.banner .num li.on { background: #F60; }
-
-/*/ 按钮 /*/
-
-.banner .btn { width: 30px; height: 50px; background: rgba(0,0,0,0.5); position: absolute; top: 50%; margin-top: -25px; cursor: pointer; text-align: center; line-height: 50px; color: #fff; font-size: 40px; font-family: "宋体"; display: none; }
-
-.banner:hover .btn { display: block; }
-
-.banner .btn_l { left: 0; }
-
-.banner .btn_r { right: 0; }
-
-/* 修改输出屏大小 */
-
-#ban1 .banner { width: 100%px; height:600px; margin: 0 auto; border: 0px solid #000; }
-
-#ban1 .banner .img img { width: 1920px; height: 600px; /* 修改图片大小 */
-
-</style>-->
+	<title>段鹏飞课题组</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/lunbo.js"></script>
+	<!-- Custom Theme files -->
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
+
 <body>
 <!--header-->
-
 <div class="header">
 	<div class="container">
 		<div class="logo">
-		<h1><a href="index.html">
-			DUAN's Group
-		</a></h1>
+			<a href="index.html">
+				<img src="images/logo2.png" alt width="240" height="80">
+		    </a>
 		</div>
 		<div class="top-nav">
 			<span class="menu"><img src="images/menu.png" alt=""> </span>
 				<ul>
-					<li class="active"><a href="index.html">主页<br/>Home</a></li>
-					<li><a href="ktzjj.html" class="hvr-sweep-to-bottom">课题组简介<br/>Introduction</a></li>
-					<li><a href="yjly.html" class="hvr-sweep-to-bottom">研究领域<br/>Research</a></li>
-					<li><a href="yjcg.html" class="hvr-sweep-to-bottom">研究成果<br/>Publication</a></li>
-					<li><a href="zncy.html" class="hvr-sweep-to-bottom">组内成员<br/>Members</a></li>
-					<li><a href="mail.html" class="hvr-sweep-to-bottom">招生招聘<br/>Contact Us</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="ktzjj.html" class="hvr-sweep-to-bottom">About</a></li>
+					<!-- <li><a href="yjly.html" class="hvr-sweep-to-bottom">Research</a></li>-->
+					<li><a href="yjcg.html" class="hvr-sweep-to-bottom">Publication</a></li>
+					<li><a href="zncy.html" class="hvr-sweep-to-bottom">Members</a></li>
+					<!--<li><a href="mail.html" class="hvr-sweep-to-bottom">Contact</a></li>-->
 				<div class="clearfix"> </div>
 				</ul>
 						<!--script-->
@@ -81,474 +42,834 @@
 							$(".top-nav ul").slideToggle(500, function(){
 							});
 						});
-				</script>				
+					</script>				
 		</div>
 		<div class="clearfix"> </div>
 	</div>
-
-</div>
-<!--<br></br>
-<script src="js/jquery.min.js"></script>
-
-<script src="js/lunbo.js"></script>
-
-<div id="ban1">
-
-<div class="banner">
-
-<ul class="img">
-<li><a href="#"><img class="img-responsive" src="images/blog/1.jpg"></a></li>
-<li><a href="#"><img class="img-responsive" src="images/blog/2.jpg"></a></li> 
-</ul>
-
-<ul class="num">--> <!--小圆圈-->
-<!--
-</ul>
-
-<div class="btn btn_l">&lt;</div> 
-
-<div class="btn btn_r">&gt;</div> 
-
 </div>
 
+<!--banner-->
+<div class="image-container">
+	<img class="main-image" src="images/banner2.png" alt="Home背景" width="1250" height="450">
+	<a href="mail.html" class="overlay-link" target="_blank">
+		<img src="images/contact.png" alt="contact us" width="250" height="120">
+	</a>
 </div>
--->
-<div class="content">
+
+<!--news-->
+<div class="new">
+	<div class="container main01">
+		<div class="main01-bg">
+			<div class="carousel col-xs-12 col-sm-12 slide col-md-7" onmouseover="pauseAutoPlay()" onmouseout="resumeAutoPlay()">
+				<div class="slides">
+					
+					<!--这里开始图片滚动内容-->
+					<!--新闻1-->
+					<a href="blog/22.html" class="slide-link" target="_blank">
+						<img src="images/blog/22.1.jpg" alt="新闻1">
+						<div class="caption">祝贺：段鹏飞团队在2023年度工作中做出突出贡献！</div>
+					</a>
+					<!--新闻2-->
+					<a href="blog/24.html" class="slide-link" target="_blank">
+						<img src="images/blog/24.1.jpg" alt="新闻2">
+						<div class="caption">祝贺：季洪汉博士在第十一届全国分子手性学术研讨会上荣获最佳口头报告奖！</div>
+					</a>
+
+
+					<!--这里结束图片滚动内容-->
+
+				</div>
+
+				<div class="controls">
+					<button onclick="prevSlide()">❮</button>
+					<button onclick="nextSlide()">❯</button>
+				</div>
+				<div class="dots"></div>
+			</div>
+
+			<script>
+				let currentSlide = 0;
+				let autoPlayTimer;
+				const slides = document.querySelector('.slides');
+				const dotsContainer = document.querySelector('.dots');
+				const slideCount = document.querySelectorAll('.slide-link').length;
+				// 初始化指示器
+				function initDots() {
+				  for (let i = 0; i < slideCount; i++) {
+					const dot = document.createElement('div');
+					dot.className = `dot ${i === 0 ? 'active' : ''}`;
+					dot.addEventListener('click', () => goToSlide(i));
+					dotsContainer.appendChild(dot);
+				  }
+				}
+				// 切换幻灯片
+				function goToSlide(index) {
+				  currentSlide = (index + slideCount) % slideCount;
+				  slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+				  updateDots();
+				}
+				function nextSlide() {
+				  goToSlide(currentSlide + 1);
+				}
+				function prevSlide() {
+				  goToSlide(currentSlide - 1);
+				}
+				// 更新指示器状态
+				function updateDots() {
+				  document.querySelectorAll('.dot').forEach((dot, index) => {
+					dot.classList.toggle('active', index === currentSlide);
+				  });
+				}
+				// 自动播放控制
+				function startAutoPlay() {
+				  autoPlayTimer = setInterval(nextSlide, 5000);
+				}
+				function pauseAutoPlay() {
+				  clearInterval(autoPlayTimer);
+				}
+				function resumeAutoPlay() {
+				  startAutoPlay();
+				}
+				// 初始化
+				initDots();
+				startAutoPlay();
+				// 窗口失焦时暂停自动播放
+				window.addEventListener('blur', pauseAutoPlay);
+				window.addEventListener('focus', resumeAutoPlay);
+			</script>
+
+			<div class="slide-cont col-xs-12 col-sm-12 col-md-5">
+				<h1>NEWS</h1>
+				<ul class="row">
+
+					<li style="padding: 6px 0px;">2024年第十一届全国手性分子学术研讨会“最佳口头报告奖”，季洪汉</li>
+					<li style="padding: 6px 0px;">2024年中国化学会第十七届全国应用化学年会“优秀墙报奖”，黄江</li>
+					<li style="padding: 6px 0px;">2023年硕士研究生国家奖学金，蒋承逾</li>
+					<li style="padding: 6px 0px;">2023年中国稀土学会学术年会“优秀墙报奖”，黄江</li>
+					<li style="padding: 6px 0px;">2023年中国化学会第十五届全国物理有机化学学术会议“优秀墙报奖”，任超</li>
+					<li style="padding: 6px 0px;">2022年海峡两岸暨港澳高分子液晶态与超分子有序结构学术研讨会“优秀墙报奖”，杨雪峰</li>
+					<li style="padding: 6px 0px;">2022年中国科学院大学“中科院院长奖”，杨雪峰</li>
+					<li style="padding: 6px 0px;">2021年中国科学院大学“朱李月华奖”，赵炵翰</li>
+
+				</ul>
+				<a href="News.html" class="newmore" style="margin-top: 3px;" target="_blank">More news+</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--content-->
+<style>
+ul, li, ol {
+	list-style: none;
+}
+</style>
+
+<div class="Duan" id="publication">
 	<div class="container">
-
-		
-		<div class="content-left">
-		<h1><font face="Cinzel-Bold">News：</font></h1>
-		<br></br>
-		
-		<!--第一列-->
-			<div class="col-md-4 content-left-top">
-			
-			
-			
-			
-			
-			
-			
-			<a href="blog/26.html"><img class="img-responsive" src="images/blog/26.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/26.html">Click to read</a></h4>
-					<p>2024-10-3，Nano Today: 基于非手性分子构筑的长持续圆偏振发光纳米组装体</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			
-			<a href="blog/24.html"><img class="img-responsive" src="images/blog/24.1.png" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/24.html">Click to read</a></h4>
-					<p>2024-10-29，祝贺: 季洪汉博士荣获第十一届全国分子手性学术研讨会最佳口头报告奖</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			
-			
-			 <a href="blog/22.html"><img class="img-responsive" src="images/blog/22.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/19.html">Click to read</a></h4>
-					<p>2024-5，祝贺：段鹏飞团队  在2023年度工作中做出突出贡献！</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			
-			
-			
-			
-			<a href="blog/21.html"><img class="img-responsive" src="images/blog/21.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/21.html">Click to read</a></h4>
-					<p>2024-03-18，Angew. Chem. Int. Ed.: 熵驱动自组装同时提升铂配合物的圆偏振发光不对称性和发光量子效率</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			
-			
-			<a href="blog/19.html"><img class="img-responsive" src="images/blog/19.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/19.html">Click to read</a></h4>
-					<p>2023-10-30，Angew. Chem. Int. Ed.: 单一对映体发光体调节超结构的螺旋反转用于圆偏振的上转换和下转移发光</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/13.html"><img class="img-responsive" src="images/blog/13.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/13.html">Click to read</a></h4>
-					<p>2022-05-01，Adv. Sci.: 具有多模态可逆转换的手性发光液晶：先进防伪材料</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-
-
-			<a href="blog/10.html"><img class="img-responsive" src="images/blog/10.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/10.html">Click to read</a></h4>
-					<p>2021-9-15，J. Mater. Chem. C: 基于双发色团湮灭剂的三重态-三重态湮灭上转换发光的新的世界纪录效率42%</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/9.html"><img class="img-responsive" src="images/blog/9.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/9.html">Click to read</a></h4>
-					<p>2021-08-19，Angew. Chem.：卤键键合的手性发光体：手性分形结构的形成及圆偏振发光放大</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/1.html"><img class="img-responsive" src="images/blog/1.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/1.html">Click to read</a></h4>
-					<p>2021-03-23，The Journal of Physical Chemical Letters：利用低能级三重态敏化剂实现光子上转换开关</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/2.html"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/2.html">Click to read</a></h4>
-					<p>2021-02-09，ACS Nano：通过完全非手性组分获得并调控纳米螺旋结构和上转换圆偏振发光</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			</div>
-			
-			
-			
-			
-			<div class="col-md-4 content-left-top">
-			<!--第二列-->
-			
-			
-			
-			
-			<a href="blog/25.html"><img class="img-responsive" src="images/blog/25.1.png" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/25.html">Click to read</a></h4>
-					<p>2024-10-07，Angew. Chem. Int. Ed.：横跨1200纳米上转换/下转移圆偏振发光的纳米粒子可用于光学防伪和信息加密</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-		   
-		    
-		   
-			
-			<a href="blog/18.html"><img class="img-responsive" src="images/blog/18.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/18.html">Click to read</a></h4>
-					<p>2023-09-30，Nat. Commun.: 可重复利用的高效圆偏振发光软光子晶体膜</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/17.html"><img class="img-responsive" src="images/blog/17.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/17.html">Click to read</a></h4>
-					<p>2023-01-17，ACS Nano：禁带边缘双重增强效应全面提升了上转换近红外圆偏振发光性能并实现了这种新型隐蔽光的防伪应用</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/15.html"><img class="img-responsive" src="images/blog/15.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/15.html">Click to read</a></h4>
-					<p>2022-06-25，Angew. Chem. Int. Ed.：基于完全非手性基元的同源和异源手性超分子聚</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-
-			<a href="blog/12.html"><img class="img-responsive" src="images/blog/12.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/12.html">Click to read</a></h4>
-					<p>2021-12-26，Adv. Optical Mater：分子内电荷转移调控基于热带吸收单光子上转换的性能</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/8.html"><img class="img-responsive" src="images/blog/8.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/8.html">Click to read</a></h4>
-					<p>2021-08-13，J. Am. Chem. Soc.: 超分子凝胶中手性自组装调控的三重态-三重态湮灭上转换发光</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-							
-			<a href="blog/3.html"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/3.html">Click to read</a></h4>
-					<p>2020-11-25，Angewandte Chemie Internatinal Edition: 手性多环芳烃-全氟芳烃相互作用提升圆偏振发光材料的整体性能</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/4.html"><img class="img-responsive" src="images/blog/4.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/4.html">Click to read</a></h4>
-					<p>2020-11-07，Nature Communications:手性液晶体系中上转换圆偏振紫外发光的手性光聚合应用</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-				</div>
-			
-			
-			
-			
-			
-			
-			<div class="col-md-4 content-left-top">
-			<!--第三列-->
-			
-			
-			
-			
-			
-			
-			<a href="blog/23.html"><img class="img-responsive" src="images/blog/23.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/23.html">Click to read</a></h4>
-					<p>2024-6-6，ACS Nano: 基于近红外圆偏振发光材料的物理不可克隆函数</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-           
-
-
-
-
-
-
-			
-				
-				
-			<a href="blog/20.html"><img class="img-responsive" src="images/blog/20.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/20.html">Click to read</a></h4>
-					<p>2024-02-05，Nano Today: 从蓝色到近红外圆偏振发光的多彩自支撑软光子晶体薄膜的高性能防伪应用</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			
-			<a href="blog/16.html"><img class="img-responsive" src="images/blog/16.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/16.html">Click to read</a></h4>
-					<p>2023-01-05，Nat. Commun.: 等离子体纳米颗粒增强的上转换圆偏振发光</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/14.html"><img class="img-responsive" src="images/blog/14.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/14.html">Click to read</a></h4>
-					<p>2022-04-27，Chem. Sci.:调节激发态手性构筑高性能固态圆偏振发光材料</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/11.html"><img class="img-responsive" src="images/blog/11.2.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/11.html">Click to read</a></h4>
-					<p>2021-12-09，Angew. Chem. Int. Ed.:手性胶束中实现了动态化学反应激发态手性的有效调控</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/7.html"><img class="img-responsive" src="images/blog/7.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/7.html">Click to read</a></h4>
-					<p>2021-07-25，Advanced Materials:多重光响应的上转换和下转换圆偏振发光固态开关</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-			
-			<a href="blog/5.html"><img class="img-responsive" src="images/blog/5.1.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/5.html">Click to read</a></h4>
-					<p>2020-11-07，付阔等同学在Nanoscale报道了银纳米线等离子体来增强圆偏振发光的现象</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			<a href="blog/6.html"><img class="img-responsive" src="images/blog/6.jpg" alt=""></a>
-				<div class=" content-left-bottom">
-					<h4><i class="glyphicon glyphicon-ok"></i><a href="blog/6.html">Click to read</a></h4>
-					<p>2020-07-10, Acc. Chem. Res.: 多种光物理过程调制复杂体系圆偏振发光性质的新展望</p>				
-				</div>
-				
-				<br></br>
-				<br></br>
-				
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<br></br>
-		<br></br>
-		<br></br>
-		
-	 
-</div>
-		
-
-		</div>
-		<!--//content-left-->
-
-	<!--content-right-->
-		<!--
-	<div class="content-right">
-		<div class="col-md-6 content-right-top">
-			<h3>Lorem Ipsum is simply dummy</h3>
-			<ul>
-				<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>It is a long established fact that a reader will be distracted</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Contrary to popular belief, Lorem Ipsum is not simply random text.</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>The standard chunk of Lorem Ipsum used since the 1500s is.</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>There are many variations of passages of Lorem Ipsum available</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>It is a long established fact that a reader will be distracted</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Contrary to popular belief, Lorem Ipsum is not simply random text.</a></li>
-				
-			</ul>
-		</div>
-		<div class="col-md-6 content-right-top col1">
-			<h3>Lorem Ipsum is simply dummy</h3>
-			<ul>
-				<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>It is a long established fact that a reader will be distracted</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Contrary to popular belief, Lorem Ipsum is not simply random text.</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>The standard chunk of Lorem Ipsum used since the 1500s is.</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>There are many variations of passages of Lorem Ipsum available</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>It is a long established fact that a reader will be distracted</a></li>
-					<li><a href="#"><i class="glyphicon glyphicon-cog"> </i>Contrary to popular belief, Lorem Ipsum is not simply random text.</a></li>
-				
-			</ul>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
-	-->
-	<!--//content-right-->
-	<!--content-bottom-->
-	<!--
-	<div class="content-bottom">
-		<div class="container">
-			<h4>Events</h4>
-			<div class="col-md-6 content-bottom-top">
-				<span>30<small>Jan</small></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-				<a href="single.html" class="hvr-icon-wobble-horizontal">Read More</a>
-			</div>
-			<div class="col-md-6 content-bottom-top">
-				<span>15<small>mar</small></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-				<a href="single.html" class="hvr-icon-wobble-horizontal">Read More</a>
-			</div>
-			<div class="clearfix"> </div>
+		<div class="some-in">
+			<img class="publication-image" src="images/cover.png" alt width="1250" height="400">
+			<h3>Selected Publications</h3>
+			<a href="https://orcid.org/0000-0002-5971-7546" target="_blank" class="sign-up">
+				<h2><text decoration="blink">Research ID</text></h2>
+			</a>
 		</div>
 	</div>
-	-->
-	<!--//content-bottom-->
-	<!--address-->
+</div>
+<div class="price">
+	<div class="container">
+		<div class="price-grids">
+			<!--这里倒序插入文章-->
+			
 
-	<div class="address">
-		<div class="container">
-			<div class=" address-more">
-	
-<div class="contents">
-<center>
-<font color="white">
-  <div class="foot" style="padding-top:13px;">Copyright 2003-2005 国家纳米科学中心 版权所有 备案序号：京ICP备05064431 京公网安备：110402500013<br />
-地址：北京市海淀区中关村北一条11号 　邮编：100190 <br />
-电话：010-62652116　传真：010-62656765<br />
-Email：webmaster@nanoctr.cn
-</font>
-</div>
-</center>
-</div>
-	
-				<!--<h3>Address</h3>
-				<div class="col-md-4 address-grid">
-					<i class="glyphicon glyphicon-map-marker"></i>
-					<div class="address1">
-						<p>北京市海淀区中关村北一条11号</p>
-						<p>电话：010-62652116</p>
+
+			<!--文章26-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/26.html" target="_blank" class="sign-up">
+								<img src="images/blog/26.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
 					</div>
-						<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 address-grid ">
-					<i class="glyphicon glyphicon-phone"></i>
-						<div class="address1">
-							<p>传真：010-62656765</p>
-						</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-md-4 address-grid ">
-					<i class="glyphicon glyphicon-envelope"></i>
-						<div class="address1">
-							<p><a href="webmaster@nanoctr.cn"> Email：webmaster@nanoctr.cn</a></p>
-						</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>-->
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Optically active persistent luminescence in supramolecular nanoassemblies constructed from entirely achiral building blocks</h7>
+							</p>
+							<p><h8>Haolai Mao, Xue Jin*, Chengxi Li, Chengyu Jiang, Xuefeng Yang, Zhijie Wang, Da-Wei Fu, Yi Zhang**, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1016/j.nantod.2024.102516"><em>Nano Today, 2024, 59, 102516.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+
+			<!--文章25-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/25.html" target="_blank" class="sign-up">
+								<img src="images/blog/25.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Upconversion/Downshifting Circularly Polarized Luminescence over 1200 nm in a Single Nanoparticle for Optical Anticounterfeiting and Information Encryption</h7>
+							</p>
+							<p><h8>Bowen Yang, Xuefeng Yang,* Yonghong Shi, Xue Jin, Tiesheng Li, Minghua Liu, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202417223"><em>Angew. Chem. Int. Ed. 2024, e202417223.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章23-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/23.html" target="_blank" class="sign-up">
+								<img src="images/blog/23.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Near-Infrared Circularly Polarized Luminescent Physical Unclonable Functions</h7>
+							</p>
+							<p><h8>Jiang Huang, Xue Jin, Xuefeng Yang, Tonghan Zhao, Helou Xie*, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/acsnano.4c03136"><em>ACS Nano, 2024, 18, 15888-15897.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章21-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/21.html" target="_blank" class="sign-up">
+								<img src="images/blog/21.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Dual Enhancement of Phosphorescence and Circularly Polarized Luminescence through Entropically Driven Self-Assembly of a Platinum(II) Complex</h7>
+							</p>
+							<p><h8>Yanqing Wang+, Na Li+, Liangwen Chu, Zelin Hao, Junyu Chen, Jiang Huang, Junlin Yan, Hongtao Bian, Pengfei Duan*, Jing Liu*, and Yu Fang</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202403898"><em>Angew. Chem. Int. Ed. 2024, e202403898.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章20-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/20.html" target="_blank" class="sign-up">
+								<img src="images/blog/20.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Free-standing iridescent films: Crafting circularly polarized luminescence from blue to NIR-II for enhanced anti-counterfeiting performance</h7>
+							</p>
+							<p><h8>Xiaolei Li, Chengyu Jiang, Xuefeng Yang*, Tonghan Zhao, Xue Jin, Shuang Jiang*, and Pengfei Duan**</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1016/j.nantod.2024.102197"><em>Nano Today, 2024, 55, 102197.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章19-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/19.html" target="_blank" class="sign-up">
+								<img src="images/blog/19.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>A Single-Enantiomer Emitter Enabled Superstructural Helix Inversion for Upconverting and Downshifting Luminescence with Bidirectional Circular Polarization</h7>
+							</p>
+							<p><h8>Chao Ren+, Wenjing Sun+, Tonghan Zhao*, Chengxi Li, Chengyu Jiang, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202315136"><em>Angew. Chem. Int. Ed. 2023, 62, e202315136.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章18-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/18.html" target="_blank" class="sign-up">
+								<img src="images/blog/18.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Recyclable soft photonic crystal film with overall improved circularly polarized luminescence</h7>
+							</p>
+							<p><h8>Yonghong Shi, Jianlei Han, Chengxi Li, Tonghan Zhao, Xue Jin, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1038/s41467-023-41884-5"><em>Nature Communications, 2023, 14, 6123.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章17-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/17.html" target="_blank" class="sign-up">
+								<img src="images/blog/17.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Dual Band-Edge Enhancing Overall	Performance of Upconverted Near-Infrared Circularly Polarized Luminescence for Anticounterfeiting</h7>
+							</p>
+							<p><h8>Xuefeng Yang, Xue Jin,* Anyi Zheng, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/acsnano.2c10646"><em>ACS Nano 2023, 17, 2661-2668.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章16-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/16.html" target="_blank" class="sign-up">
+								<img src="images/blog/16.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Enhanced chiroptic properties of	nanocomposites of achiral plasmonic nanoparticles decorated with chiral	dye-loaded micelles</h7>
+							</p>
+							<p><h8>Tonghan Zhao, Dejing Meng, Zhijian Hu, Wenjing Sun, Yinglu Ji, Jianlei Han, Xue Jin, Xiaochun Wu*, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1038/s41467-022-35699-z"><em>Nature Communications, 2023, 14, 81.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章15-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/15.html" target="_blank" class="sign-up">
+								<img src="images/blog/15.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Homologous and Heterologous Chiral Supramolecular Polymerization from Exclusively Achiral Building Blocks</h7>
+							</p>
+							<p><h8>Chengxi Li, Yutao Sang, Xue Jin, Pengfei Duan*, and Minghua Liu*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202206332"><em>Angew. Chem. Int. Ed. 2022, 61, e202206332.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章14-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/14.html" target="_blank" class="sign-up">
+								<img src="images/blog/14.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Regulating the excited state chirality to fabricate high-performance-solid-state circularly polarized luminescence materials</h7>
+							</p>
+							<p><h8>Jianlei Han, Yonghong Shi, Xue Jin, Xuefeng Yang, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1039/d2sc01846b"><em>Chem. Sci., 2022, 13, 6074.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章13-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/13.html" target="_blank" class="sign-up">
+								<img src="images/blog/13.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Chiral Luminescent Liquid Crystal with Multi-State-Reversibility: Breakthrough in Advanced Anti-Counterfeiting Materials</h7>
+							</p>
+							<p><h8>Yonghong Shi, Jianlei Han, Xue Jin, Wangen Miao, Yi Zhang, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/advs.202201565"><em>Adv. Sci. 2022, 9, 2201565.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章12-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/12.html" target="_blank" class="sign-up">
+								<img src="images/blog/12.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Tunable Anti-Stokes-Shift Behaviors Based on Intramolecular Charge Transfer Characteristics of Diarylethene Derivatives</h7>
+							</p>
+							<p><h8>Yonghong Shi, Jianlei Han, Xue Jin, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/adom.202102180"><em>Adv. Optical Mater. 2022, 10, 2102180.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章11-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/11.html" target="_blank" class="sign-up">
+								<img src="images/blog/11.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Modulating the Excited State Chirality of Dynamic Chemical Reactions in Chiral Micelles</h7>
+							</p>
+							<p><h8>Xuefeng Yang, Xue Jin, Lili Zhou, Pengfei Duan*, Yaxun Fan*, Yilin Wang</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202115600"><em>Angew. Chem. Int. Ed. 2022, 61, e202115600.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章10-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/10.html" target="_blank" class="sign-up">
+								<img src="images/blog/10.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Highly efficient photon upconversion based on triplet-triplet annihilation from bichromophoric annihilators</h7>
+							</p>
+							<p><h8>Wenjing Sun, Alessandra Ronchi, Tonghan Zhao, Jianlei Han, Angelo Monguzzi*, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1039/D1TC01569A"><em>J. Mater. Chem. C, 2021,9, 14201-14208.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章9-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/9.html" target="_blank" class="sign-up">
+								<img src="images/blog/9.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Halogen Bonded Chiral Emitters: Generation of Chiral Fractal Architecture with Amplified Circularly Polarized Luminescence</h7>
+							</p>
+							<p><h8>Shuyuan Zheng, Jianlei Han, Xue Jin*, Qiang Ye, Jin Zhou, Pengfei Duan*, and Minghua Liu</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202108661"><em>Angew. Chem. Int. Ed. 2021, 60, 22711.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章8-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/8.html" target="_blank" class="sign-up">
+								<img src="images/blog/8.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Steering Triplet-Triplet Annihilation Upconversion through Enantioselective Self-Assembly in a Supramolecular Gel</h7>
+							</p>
+							<p><h8>Dong Yang, Jianlei Han, Yutao Sang, Tonghan Zhao, Minghua Liu, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/jacs.1c05927"><em>J. Am. Chem. Soc. 2021, 143, 33, 13259-13265.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>			
+			<!--文章7-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/7.html" target="_blank" class="sign-up">
+								<img src="images/blog/7.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Multi-Light-Responsive Upconversion-and-Downshifting-Based Circularly Polarized Luminescent Switches in Chiral Metal-Organic Frameworks</h7>
+							</p>
+							<p><h8>Tonghan Zhao, Jianlei Han, Yonghong Shi, Jin Zhou, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/adma.202101797"><em>Adv. Mater. 2021, 33, 2101797.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章6-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/6.html" target="_blank" class="sign-up">
+								<img src="images/blog/6.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>New Perspectives to Trigger and Modulate Circularly Polarized Luminescence of Complex and Aggregated Systems: Energy Transfer, Photon Upconversion, Charge Transfer, and Organic Radical</h7>
+							</p>
+							<p><h8>Tonghan Zhao, Jianlei Han, Pengfei Duan*, and Minghua Liu*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/acs.accounts.0c00112"><em>Acc. Chem. Res. 2020, 53, 7, 1279-1292.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章5-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/5.html" target="_blank" class="sign-up">
+								<img src="images/blog/5.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Amplifying the excited state chirality through self-assembly and subsequent enhancement via plasmonic silver nanowires</h7>
+							</p>
+							<p><h8>Kuo Fu‡, Xue Jin‡, Minghao Zhou, Kai Ma, Pengfei Duan*, and ZhenQiang Yu*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1039/D0NR04510A"><em>Nanoscale, 2020, 12, 19760-19767.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章4-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/4.html" target="_blank" class="sign-up">
+								<img src="images/blog/4.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Sequentially amplified circularly polarized ultraviolet luminescence for enantioselective photopolymerization</h7>
+							</p>
+							<p><h8>Dongxue Han, Xuefeng Yang, Jianlei Han, Jin Zhou, Tifeng Jiao, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1038/s41467-020-19479-1"><em>Nat. Commun. 2020, 11, 5659.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章3-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/3.html" target="_blank" class="sign-up">
+								<img src="images/blog/3.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Improving the Overall Properties of Circularly Polarized Luminescent Materials Through Arene-Perfluoroarene Interactions</h7>
+							</p>
+							<p><h8>Haowen Zhang, Jianlei Han, Xue Jin, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1002/anie.202014891"><em>Angew. Chem. Int. Ed. 2021, 60, 4575.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章2-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/2.html" target="_blank" class="sign-up">
+								<img src="images/blog/2.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Steering Nanohelix and Upconverted Circularly Polarized Luminescence by Using Completely Achiral Components</h7>
+							</p>
+							<p><h8>Minghao Zhou, Yutao Sang, Xue Jin, Sanxu Chen, Junchen Guo, Pengfei Duan*, and Minghua Liu</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/acsnano.0c08539"><em>ACS Nano 2021, 15, 2, 2753-2761.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+			<!--文章1-->
+			<div class="col-md-12 price-grid">
+				<ul>
+					<li>
+						<a class="sign-up"></a>
+					</li>
+					<div class="col-md-4">
+						<p>
+							<a href="blog/1.html" target="_blank" class="sign-up">
+								<img src="images/blog/1.1.jpg" alt width="420px" height="240px">
+							</a>
+						</p>
+					</div>
+					<div class="col-md-offset-5">
+					</div>
+					<div class="col-md-offset-5">
+						<ul>
+							<p><h7>Switching Photon Upconversion by Using Photofluorochromic Annihilator with Low-Lying Triplet</h7>
+							</p>
+							<p><h8>Jianlei Han, Jian Zhang*, Yonghong Shi, and Pengfei Duan*</h8>
+							</p>
+							<p><h9><a href="https://doi.org/10.1021/acs.jpclett.1c00535" target="_blank"><em>J. Phys. Chem. Lett. 2021, 12, 12, 3135-3141.</em></a></h9>
+							</p>
+						</ul>
+					</div>
+				</ul>
+			</div>
+            <!--这里往下结束-->
+			<div class="clearfix"></div>
+
+			<div class="More">
+				<a href="yjcg.html" target="_blank">MORE+</a>
 			</div>
 		</div>
 	</div>
-	<!--//address-->	
 </div>
-<!--footer-->
-<!--
-<div class="footer">
+<!--content-bottom-->
+
+
+<!--address-->
+<div class="address">
 	<div class="container">
-		<div class="col-md-4 footer-top">
-			<h3><a href="index.html">scientist</a></h3>
+		<div class=" address-more">
+			<div class="contents">
+				<font color="white">
+				<div class="footer" style="padding-top:5px;">Copyright 2017-2018 国家纳米科学中心 版权所有 备案序号：京ICP备05064431号-1 京公网安备：110402500013<br />
+					地址：北京市海淀区中关村北一条11号 　邮编：100190 <br />
+					电话：010-62652116　传真：010-62656765<br />
+					Email：webmaster@nanoctr.cn
+				</div>
+				</font>
+			</div>
 		</div>
-		<div class="col-md-4 footer-top1">
-			<ul class="social">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="dribble"> </i></a></li>
-						<li><a href="#"><i class="facebook"> </i></a></li>
-					</ul>
-		</div>
-		<div class="col-md-4 footer-top2">
-			<p >Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-		</div>
-		<div class="clearfix"> </div>
 	</div>
 </div>
--->
+<!--address-bottom-->
+
+<script type="text/JavaScript">
+	$(document).ready(function() {
+	
+	$().UItoTop({ easingType:'easeOutQuart'});
+	})
+</script>
+
+
 </body>
 </html>
